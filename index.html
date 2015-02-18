@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>"Let's Make an Interactive Map for the Web"</title>
+
+</head>
+<body>
+<h1>"Let's Make an Interactive Map for the Web"</h1>
+
+<h2>A TerreWEB Workshop</h2>
+
+<h3>With: Joey Lee</h3>
+
+<h3>When: Thursday November 6th, 2014, 3:30pm - 6:00pm</h3>
+
+<h3>Where: UBC, <a href="http://www.maps.ubc.ca/PROD/index_detail.php?locat1=386">MacMillan (Land and Food Systems Building)</a>, Room 258</h3>
+
+<hr />
+
+<h1>Pre-Reqs:</h1>
+
+<ul>
+<li>Install <a href="https://www.mapbox.com/tilemill/">Tilemill </a></li>
+<li>Sign up with <a href="https://www.mapbox.com/">Mapbox</a></li>
+<li>Download this Workshop <a href="https://github.com/joeyklee/joeyklee.github.io">Github repository</a></li>
+<li><p><strong>IF YOU'RE RUNNING OSX YOSEMITE</strong>:</p>
+
+<p>  <strong>Option 1</strong>:</p>
+
+<pre><code>  1. Download Tilemill as normal
+  2. Open Tilemill
+  3. Go to 'Updates Preferences'
+  4. Check: "Install Developer Builds"
+  Fingers crossed! 
+</code></pre>
+
+<p>  <strong>Option 2</strong>:</p>
+
+<pre><code>  You have to build from source which is not so straightforward if you're not used to using the terminal and/or if you don't know what the Terminal is. I can help set this up for you, but may take some time. You're still welcome to check out the talk and hang out. If you want to set it up yourself:
+
+  NOTE: If npm or homebrew aren't things you have yet on your machine, then you might need those before continuing.
+
+  1. Download the zip file from: https://github.com/mapbox/tilemill
+  2. Place the zip folder where you want, either in Documents or in           your User Folder and unzip it. 
+  3. there is a folder called “platforms” in the unzipped folder (the repo), and in that there is a “osx” folder aaaaaand in there is README.md. 
+  4.Open it and scroll down to “build and test” and follow the steps, and this should be it.
+</code></pre></li>
+</ul>
+
+
+<h1>What to Bring:</h1>
+
+<ul>
+<li>Computer with Tilemill installed</li>
+<li>Enthusiasm &amp; patience</li>
+<li>Your own data in shapefile or geojson format or csv with geocoordinates (optional)</li>
+</ul>
+
+
+<hr />
+
+<h1>Abstract</h1>
+
+<p>"Let's make an interactive map for the web!" is an introductory hands-on workshop on building your first interactive map for the web. In this workshop, you will learn the basics of Tilemill and Mapbox - two of the most used and user-friendly and opensource tools for building delightful, clickable, zoomable, and custom maps for the web. There will be two sessions followed by an open lab section. We welcome everyone to join the workshop, especially those who are interested in finding new ways to communicate their data/research, meeting other map nerds, or just looking for a tilemill refresher and a friendly environment.</p>
+
+<p>The tutorial will be focused mainly on building a basic interactive web map. There will be limited discussion of mapbox.js/leaflet.js so this workshop may not be as informative for those more advanced mappers out there. Regardless of skill level, I'd be happy to meet you!</p>
+
+<p></br></p>
+
+<h1>Bio: Joey Lee</h1>
+
+<p>Joey is a geographer from San Francisco, California, working in critical cartography, geospatial technology, data visualization, and digital media. He has a BA from UCLA and has worked as a research assistant at the Massachusetts Institute of Technology (MIT). He is actively involved in data visualization and science communication projects and conducts research on smart cities and urban climate science. He is a co-author of the Big Atlas of LA Pools and is currently pursuing a MSc at the University of British Columbia in Vancouver, Canada. When Joey is not making maps, he can be found on long bike rides, skateboarding, or enjoying the latest This American Life.</p>
+
+<hr />
+
+<h1>Lab Workshop</h1>
+
+<h2>Details:</h2>
+
+<ul>
+<li>Total time: approx. 2.5 hours</li>
+<li>Location: tbd</li>
+</ul>
+
+
+<h2>Agenda:</h2>
+
+<h3>Introduction</h3>
+
+<ul>
+<li>Greetings</li>
+<li>Web maps: "Hello World"</li>
+</ul>
+
+
+<p> (~30 min)</p>
+
+<h3>Tutorial I</h3>
+
+<p>  What we will cover:</p>
+
+<ul>
+<li>Setup &amp; Tilemill tour</li>
+<li>Data input</li>
+<li>Basic Data styling</li>
+<li>Interactivity</li>
+<li>Exporting</li>
+<li>Posting/Embedding</li>
+</ul>
+
+
+<p>  (~60 min)</p>
+
+<h3>Tutorial II</h3>
+
+<p>   What we will cover:</p>
+
+<ul>
+<li> styling at different zoom levels</li>
+<li> Styling data based on attributes</li>
+<li> Images as legends</li>
+</ul>
+
+
+<p>   (~30 min)</p>
+
+<p>  <strong>NOTE</strong>: The short presentation on mapbox.js/leaflet.js was replaced with Tutorial II.</p>
+
+<h3>Open Lab Time</h3>
+
+<ul>
+<li>Ask questions, chat with your neighbor, &amp; make maps!</li>
+</ul>
+
+
+<p>(~35 min)</p>
+
+<p></br>
+NOTE: Some of the content may change.</p>
+</body>
+</html>
