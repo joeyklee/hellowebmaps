@@ -1,23 +1,19 @@
 # "Let's Make an Interactive Map for the Web" 
-## A TerreWEB Workshop 
 ### With: Joey Lee
-### When: Thursday November 6th, 2014, 3:30pm - 6:00pm
-### Where: UBC, [MacMillan (Land and Food Systems Building)](http://www.maps.ubc.ca/PROD/index_detail.php?locat1=386), Room 258   
 
 ***
 
-# Pre-Reqs:
+# Setup:
 + Install [Tilemill ](https://www.mapbox.com/tilemill/)
 + Sign up with [Mapbox](https://www.mapbox.com/)
 + Download this Workshop [Github repository](https://github.com/joeyklee/joeyklee.github.io)
-+ **IF YOU'RE RUNNING OSX YOSEMITE**: 
-	
++ **IF YOU'RE RUNNING OSX YOSEMITE and running into issues**: 
+
 	**Option 1**:
 		1. Download Tilemill as normal
 		2. Open Tilemill
 		3. Go to 'Updates Preferences'
-		4. Check: "Install Developer Builds"
-		Fingers crossed! 
+		4. Check: "Install Developer Builds" 
 
 	**Option 2**:
 
@@ -46,8 +42,11 @@
 The tutorial will be focused mainly on building a basic interactive web map. There will be limited discussion of mapbox.js/leaflet.js so this workshop may not be as informative for those more advanced mappers out there. Regardless of skill level, I'd be happy to meet you! 
 
 </br>
+
+<!--
 # Bio: Joey Lee
 Joey is a geographer from San Francisco, California, working in critical cartography, geospatial technology, data visualization, and digital media. He has a BA from UCLA and has worked as a research assistant at the Massachusetts Institute of Technology (MIT). He is actively involved in data visualization and science communication projects and conducts research on smart cities and urban climate science. He is a co-author of the Big Atlas of LA Pools and is currently pursuing a MSc at the University of British Columbia in Vancouver, Canada. When Joey is not making maps, he can be found on long bike rides, skateboarding, or enjoying the latest This American Life.
+-->
 
 ***
 # Lab Workshop
