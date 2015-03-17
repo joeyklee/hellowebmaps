@@ -1,292 +1,318 @@
+
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #737373;
-    background-color: white;
-    margin: 10px 13px 10px 13px;
-}
-table {
-	margin: 10px 0 15px 0;
-	border-collapse: collapse;
-}
-td,th {	
-	border: 1px solid #ddd;
-	padding: 3px 10px;
-}
-th {
-	padding: 5px 10px;	
-}
+	<meta charset="utf-8">
 
-a {
-    color: #0069d6;
-}
-a:hover {
-    color: #0050a3;
-    text-decoration: none;
-}
-a img {
-    border: none;
-}
-p {
-    margin-bottom: 9px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #404040;
-    line-height: 36px;
-}
-h1 {
-    margin-bottom: 18px;
-    font-size: 30px;
-}
-h2 {
-    font-size: 24px;
-}
-h3 {
-    font-size: 18px;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
-    font-size: 14px;
-}
-h6 {
-    font-size: 13px;
-}
-hr {
-    margin: 0 0 19px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-}
-blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
-    font-family:georgia,serif;
-    font-style: italic;
-}
-blockquote:before {
-    content:"\201C";
-    font-size:40px;
-    margin-left:-10px;
-    font-family:georgia,serif;
-    color:#eee;
-}
-blockquote p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-style: italic;
-}
-code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
-}
-code {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    padding: 14px;
-    margin: 0 0 18px;
-    line-height: 16px;
-    font-size: 11px;
-    border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-pre code {
-    background-color: #fff;
-    color:#737373;
-    font-size: 11px;
-    padding: 0;
-}
-sup {
-    font-size: 0.83em;
-    vertical-align: super;
-    line-height: 0;
-}
-* {
-	-webkit-print-color-adjust: exact;
-}
-@media screen and (min-width: 914px) {
-    body {
-        width: 854px;
-        margin:10px auto;
-    }
-}
-@media print {
-	body,code,pre code,h1,h2,h3,h4,h5,h6 {
-		color: black;
-	}
-	table, pre {
-		page-break-inside: avoid;
-	}
-}
-</style>
-<title>"Let's Make an Interactive Map for the Web"</title>
+	<title>Intro to GitHub</title>
 
+	<meta name="description" content="Intro to GitHub">
+	<meta name="author" content="Amr Eldib">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="assets/style/reveal.css">
+	<link rel="stylesheet" href="assets/style/night.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="assets/style/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
 </head>
+
 <body>
-<h1>"Let's Make an Interactive Map for the Web"</h1>
+	<div class="reveal">
 
-<h2>A TerreWEB Workshop</h2>
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<!-- <img src="img/octonaut.jpg" /> -->
+				<h1>Hello Web Maps</h1>
+				<p>
+					<small>
+						<a href="http://www.jk-lee.com">Joey Lee</a> / 
+						<a href="https://github.com/joeyklee">@joeyklee</a>
+					</small>
+					<br />
+					<small>MaptimeYVR - March 17, 2015</small>
+				</p>
+			</section>
 
-<h3>With: Joey Lee</h3>
+			<section>
+				<h1>First things first</h1>
+				<p>
+					Download the repo: <br>
+					<a href='https://github.com/joeyklee/hellowebmaps'>Hello Web Maps</a>
+				</p>
+			</section>
 
-<h3>When: Thursday November 6th, 2014, 3:30pm - 6:00pm</h3>
+			<section>
+				<small>Who Am I?</small>
+				<h1>Joey Lee</h1>
+				<h3> Street Creds:</h3>
+				    <p> UCLA (2012), MIT Senseable City Lab (2013) </p>
+				    <p> MSc, UBC Department of Geography (2015)</p>
+			    <h3> Interests:</h3>
+			        <p> Critical Cartography | Creative Coding | Science communication </p>
+			        <!-- <p> </p> -->
+			</section>
 
-<h3>Where: UBC, <a href="http://www.maps.ubc.ca/PROD/index_detail.php?locat1=386">MacMillan (Land and Food Systems Building)</a>, Room 258</h3>
+			<section>
+				<h1>Why make interactive maps?</h1>
+			</section>
 
-<hr />
+			<section>
+				<h3>
+					Interactive maps are powerful for visualization , presentation, sharing, and communication...
+				</h3>
+				<h3>
+					... and you can (ab)use the power of the web to allow exploration and enhance relevancy!
+				</h3>
+			</section>
 
-<h1>Pre-Reqs:</h1>
+			<section>
+				<h2>What are some tools?</h2>
+				<p>
+					Lot's out there, but some big ones:
+				</p>
+				<ul>
+					<li class="fragment">Tilemill / Mapbox & Mapbox.js / Turf.js </li>
+					<li class="fragment">Leaflet.js</li>
+					<li class="fragment">D3.js</li>
+					<li class="fragment">CartoDB</li>
+					<li class="fragment">Google Maps API</li>
+					<li class="fragment">Openlayers</li>
+				</ul>
+				<!-- <p> Non-web based tool worth checking out: Unfolding Maps for Processing
+				</p> -->
+			</section>
 
-<ul>
-<li>Install <a href="https://www.mapbox.com/tilemill/">Tilemill </a></li>
-<li>Sign up with <a href="https://www.mapbox.com/">Mapbox</a></li>
-<li>Download this Workshop <a href="https://github.com/joeyklee/joeyklee.github.io">Github repository</a></li>
-<li><p><strong>IF YOU'RE RUNNING OSX YOSEMITE</strong>:</p>
+			<section>
+				<h1> We will focus on Tilemill and Mapbox today :)</h1>
+			</section>
 
-<p>  <strong>Option 1</strong>:</p>
+			<section>
+				<h1> Just a few example projects for motivation...</h1>
+			</section>
 
-<pre><code>  1. Download Tilemill as normal
-  2. Open Tilemill
-  3. Go to 'Updates Preferences'
-  4. Check: "Install Developer Builds"
-  Fingers crossed! 
-</code></pre>
+			<section>
+				<h2><a href="http://senseable.mit.edu/bos311/">Boston 3-1-1 (2012)</a></h2>
+				<!-- <img src="assets/img-presentation/bos311.png" alt="bos311" class='exampleimg' height="450px">  -->
+			    <img src="assets/img-presentation/bos311_2.png" alt="bos311_2" height="400px"><br> 
+			    <p> Boston's 3-1-1 Maintenance Phone Calls </p>
+			    <p>(My <em>first</em> Tilemill Project!) </p>
+			</section>
 
-<p>  <strong>Option 2</strong>:</p>
+			<section>
+				 <h2><a href="hub.cab">HubCab (2014)</a></h2>
+    			<img src="assets/img-presentation/hubcab.png" alt="hub.cab" height="400px"> 
+    			<!-- <img src="img-presentation/hubcab-2.png" alt="hub.cab" class='exampleimg'>  -->
+    			<p>Hubcab: Exploring New York City <em>taxi trails</em> and sharing our way to a more sustainable urban future</p>
+			</section>
 
-<pre><code>  You have to build from source which is not so straightforward if you're not used to using the terminal and/or if you don't know what the Terminal is. I can help set this up for you, but may take some time. You're still welcome to check out the talk and hang out. If you want to set it up yourself:
+			<section>
+				<h2><a href="http://energyexplorer.ca/">Community Energy Explorer (beta)</a></h2>
+				    <img src="assets/img-presentation/cee-1.png" alt="cee" height="400px">
+				    <p> Exploring Metro Vancouver Renewable Energy</p>
+			</section>
 
-  NOTE: If npm or homebrew aren't things you have yet on your machine, then you might need those before continuing.
+			<section>
+				  <h2><a href="http://projects.propublica.org/louisiana/#">Propublica: Losing Ground</a></h2>
+				  <img src="assets/img-presentation/propublica-lg.png" alt="propublica" height="400px"> 
+				  <!-- <img src="img-presentation/propublica-lg-2.png" alt="propublica_2" class='exampleimg' align='left'>  -->
+				  <p>Visualizing Louisiana's sinking places</p>
+			</section>
 
-  1. Download the zip file from: https://github.com/mapbox/tilemill
-  2. Place the zip folder where you want, either in Documents or in           your User Folder and unzip it. 
-  3. there is a folder called “platforms” in the unzipped folder (the repo), and in that there is a “osx” folder aaaaaand in there is README.md. 
-  4.Open it and scroll down to “build and test” and follow the steps, and this should be it.
-</code></pre></li>
-</ul>
+			<section>
+				<h2><a href="http://content.stamen.com/edf-methane-maps">Stamen's Methane Visualizer (2014)</a></h2>
+				  <img src="assets/img-presentation/leaky-1.png" alt="leaky-1" height="400px"> 
+				  <!-- <img src="img-presentation/leaky-2.png" alt="leaky-22" class='exampleimg' align='left'>  -->
+				  <p>How <em>leaky</em> is your city? </p>
+			</section>
+			
+			<section>
+				<h2><a href="http://www.fatalatour.com/">David Leonard's Fatalatour</a></h2>
+				<img src="assets/img-presentation/fatalatour-1.png" alt="fatalatour-1" height="400px"> 
+				<!-- <img src="img-presentation/fatalatour-2.png" alt="fatalatour-2" class='exampleimg' align='left'>  -->
+				<p> Los Angeles's Gun Related Deaths</p>
+			</section>
 
+			<section>
+				<h1>Before Getting Started</h1>
+			</section>
 
-<h1>What to Bring:</h1>
+			<section>
+				<h1>Computers are friends...</h1>
+				<h2>...and google searching is your <em>best friend</em></h2>
+				 <p> *The answer to most (all?) of your questions are somewhere <em>on the web</em>!</p> 
+			</section>
 
-<ul>
-<li>Computer with Tilemill installed</li>
-<li>Enthusiasm &amp; patience</li>
-<li>Your own data in shapefile or geojson format or csv with geocoordinates (optional)</li>
-</ul>
+			<section>
+				<!-- What makes a web map-->
+				    <h2> What makes <em>a web map</em> ? </h2>
+				    <h3>
+					    <ul> 
+					    	<li>1. Maptiles*, </li>
+					         <li>2.Geodata / Feature Layers</li>
+					         <li>3. "The Web"</li>
+			         	</ul>
+		         	</h3> 
+			</section>
 
+			<section>
+				<h1>1.<em>Maptiles</em> *</h1>
+				    <h4>*This isn't always the case, but for simplicity, let's just assume so :)</h4>
+			</section>
 
-<hr />
+			<section>
+				<h2> Maptiles</h2>
+				<h3>
+					<ul>
+						<li>"... web maps are made out of many small square images called <a href="https://www.mapbox.com/foundations/how-web-maps-work/">tiles</a>"</li>
+						<li>"These tiles are typically 256x256 pixels and placed sided-by-side in order to create the <em>illusion of a seamless image</em>."</li>
 
-<h1>Abstract</h1>
+					</ul>
+				</h3>
+			</section>
 
-<p>"Let's make an interactive map for the web!" is an introductory hands-on workshop on building your first interactive map for the web. In this workshop, you will learn the basics of Tilemill and Mapbox - two of the most used and user-friendly and opensource tools for building delightful, clickable, zoomable, and custom maps for the web. There will be two sessions followed by an open lab section. We welcome everyone to join the workshop, especially those who are interested in finding new ways to communicate their data/research, meeting other map nerds, or just looking for a tilemill refresher and a friendly environment.</p>
+			<section>
+				<h2>Maptiles</h2>
+					<img src="assets/img-presentation/tiles-example.png" alt="tiles-example" height="400px">
+				    <p>See: They are just little images <em>cleverly</em> stitched together!</p>
+				    <p>Thanks <em>@lyzidiamond & Mapbox</em> for the info! </p>
+			</section>
 
-<p>The tutorial will be focused mainly on building a basic interactive web map. There will be limited discussion of mapbox.js/leaflet.js so this workshop may not be as informative for those more advanced mappers out there. Regardless of skill level, I'd be happy to meet you!</p>
+			<section>
+				<h2>Oh! So that's how OpenStreetMap, GoogleMaps, and those slippy maps work? </h2>
+				<h1>Yeah!</h1>
+			</section>
 
-<p></br></p>
+			<section>
+				<h2>Maptiles === MIND BLOWN</h2>
+					 <img src="assets/img-presentation/mindblown.gif" height="400px">
+			</section>
 
-<h1>Bio: Joey Lee</h1>
+			<section>
+				<h1>2. Feature Layers & Geodata</h1>
+				<p> THE BEST STUFF EVER</p>
+			</section>
 
-<p>Joey is a geographer from San Francisco, California, working in critical cartography, geospatial technology, data visualization, and digital media. He has a BA from UCLA and has worked as a research assistant at the Massachusetts Institute of Technology (MIT). He is actively involved in data visualization and science communication projects and conducts research on smart cities and urban climate science. He is a co-author of the Big Atlas of LA Pools and is currently pursuing a MSc at the University of British Columbia in Vancouver, Canada. When Joey is not making maps, he can be found on long bike rides, skateboarding, or enjoying the latest This American Life.</p>
+			<section>
+				<h2>Feature Layers</h2>
+				<h3>
+					<p>"Feature layers are map layers that <em>live on top </em> of your base tiles. Sometimes you can <em>interact</em> with them (clicking to produce a popup, for example). "
+					</P>
+				</h3>
+			</section>
 
-<hr />
+			<section>
+				<h2>Geodata</h2>
+					<p>Feature layers are typically <em>geospatial datasets</em> such as...</p>
+						<ul>
+							<li>GeoJSON</li>
+							<li>Shapefiles</li>
+							<li>KML</li>
+							<li>CSV</li>
+						</ul>
+			</section>
 
-<h1>Lab Workshop</h1>
+			<section>
+				<h2> GeoJSON, KML & Shapefiles</h2>
+					<img src="assets/img-presentation/shapefile-example.png" alt="shapefile" height="400px">
+				 <p> Imagine: <em>Spreadsheet</em> + <em>Polygons</em> in geospace</p>
+				 <p> Probably your most common geospatial data types. We <em> &lt;3 </em> geojson! </p>
+			</section>
 
-<h2>Details:</h2>
+			<section>
+				<h2> CSV (comma separated values) </h2>
+					<img src="assets/img-presentation/csv-example.png" alt="csv" height="400px">
+				<p> Basically: <em>Spreadsheet</em></p>
+				<p>Note: we can directly upload a .csv file into Tilemill if it includes columns with <em>latitude & longitude</em> coordinates</p>
+			</section>
 
-<ul>
-<li>Total time: approx. 2.5 hours</li>
-<li>Location: tbd</li>
-</ul>
+			<section>
+				<h2>The cool thing is, we can render Feature layers as <em>tiles</em> or as <em>vector</em> (svg) depending on our needs, the sizes of our data, etc.</h2>
+				<p>Today, we will render Feature Layers as Tiles</p>
+				<p>There are also things called "vector tiles" but we won't get into those today...</p>
+			</section>
 
+			<section>
+				<!-- "The Web" -->
+				 <h1>3. "The <em>Web</em>"</h1>
+			</section>
 
-<h2>Agenda:</h2>
+			<section>
+				<h2>The Web</h2>
+				<p>With web maps, the power to <em>zoom, pan, toggle, click, drag,</em> etc. comes from the friendly "web stack" of HTML, CSS, and Javascript and a variety of server technologies.</p>
+				<p> Shameless self promotion: Check out <a href="https://github.com/b-g/tilehut"> Tilehut.js</a> to get started setting up your own tileserver! </p>
+			</section>
 
-<h3>Introduction</h3>
+			<section>
+				<h2>The Web</h2>
+				<p>While the web stack is indeed a magical combo, today <em>let's not worry</em> about those gritty details.</p><br>
+				<p>Instead, let's <em>let Tilemill and Mapbox work their magic</em> and help us build our first interactive web map.</p>
+			</section>
 
-<ul>
-<li>Greetings</li>
-<li>Web maps: "Hello World"</li>
-</ul>
+			<section>
+				<h1> Go to <a href='https://github.com/joeyklee/hellowebmaps/tree/master/Tutorial%20I'>Hello Web Maps Tutorial I</a> to get started! </h1>
+			</section>
 
+			<section>
+				<h1> Thanks MaptimeYVR!</h1>
+				<h2> Special thanks to Sarah and Dimitry for organizing :)</h2>
+			</section>
 
-<p> (~30 min)</p>
+			<section>
+				<h2>Vancouver Crime Map (2013)</h2>
+				<iframe id='map2' frameBorder='0' src='https://a.tiles.mapbox.com/v4/joeyklee.k5840079/attribution,zoompan,zoomwheel,legend,geocoder,share.html?access_token=pk.eyJ1Ijoiam9leWtsZWUiLCJhIjoiMlRDV2lCSSJ9.ZmGAJU54Pa-z8KvwoVXVBw' width="960"height="550"></iframe>
+				  </div>
+			</section>
+		</div>
 
-<h3>Tutorial I</h3>
+	</div>
 
-<p>  What we will cover:</p>
+	<script src="assets/js/head.min.js"></script>
+	<script src="assets/js/reveal.js"></script>
 
-<ul>
-<li>Setup &amp; Tilemill tour</li>
-<li>Data input</li>
-<li>Basic Data styling</li>
-<li>Interactivity</li>
-<li>Exporting</li>
-<li>Posting/Embedding</li>
-</ul>
+	<script>
 
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
 
-<p>  (~60 min)</p>
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-<h3>Tutorial II</h3>
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
 
-<p>   What we will cover:</p>
+	</script>
 
-<ul>
-<li> styling at different zoom levels</li>
-<li> Styling data based on attributes</li>
-<li> Images as legends</li>
-</ul>
-
-
-<p>   (~30 min)</p>
-
-<p>  <strong>NOTE</strong>: The short presentation on mapbox.js/leaflet.js was replaced with Tutorial II.</p>
-
-<h3>Open Lab Time</h3>
-
-<ul>
-<li>Ask questions, chat with your neighbor, &amp; make maps!</li>
-</ul>
-
-
-<p>(~35 min)</p>
-
-<p></br>
-NOTE: Some of the content may change.</p>
 </body>
 </html>
