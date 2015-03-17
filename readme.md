@@ -6,7 +6,7 @@
 # Setup:
 + Install [Tilemill ](https://www.mapbox.com/tilemill/)
 + Sign up with [Mapbox](https://www.mapbox.com/)
-+ Download this Workshop [Github repository](https://github.com/joeyklee/joeyklee.github.io)
++ Download this Workshop [Github repository](https://github.com/joeyklee/hellowebmaps)
 + **IF YOU'RE RUNNING OSX YOSEMITE and running into issues**: 
 
 	**Option 1**:
