@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic);
 /**
  * Black theme for reveal.js.
@@ -10,16 +10,16 @@
  *********************************************/
 body {
   background: #111;
-  background-color: #111; }
+  background-color: #E0E0EB; }
 
 .reveal {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   font-weight: normal;
-  color: #eee; }
+  color: #000; }
 
 ::selection {
-  color: #fff;
+  color: #000;
   background: #e7ad52;
   text-shadow: none; }
 
@@ -32,8 +32,8 @@ body {
  *********************************************/
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
-  font-family: 'Montserrat', Impact, sans-serif;
+  color: #000;
+  font-family: 'Oswald', Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -72,7 +72,7 @@ body {
   font-weight: bold; }
 
 .reveal em {
-  font-style: italic; }
+  color: #944DDB; }
 
 .reveal ol, .reveal dl, .reveal ul {
   display: inline-block;
@@ -179,14 +179,14 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #e7ad52;
+  color: #33D685;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 .reveal a:hover {
-  color: #f3d7ac;
+  color: #00B85C;
   text-shadow: none;
   border: none; }
 
@@ -217,28 +217,28 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-  border-right-color: #e7ad52; }
+  border-right-color: #33D685; }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-  border-left-color: #e7ad52; }
+  border-left-color: #33D685; }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-  border-bottom-color: #e7ad52; }
+  border-bottom-color: #33D685; }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-  border-top-color: #e7ad52; }
+  border-top-color: #33D685; }
 
 .reveal .controls div.navigate-left.enabled:hover {
-  border-right-color: #f3d7ac; }
+  border-right-color: #00B85C; }
 
 .reveal .controls div.navigate-right.enabled:hover {
-  border-left-color: #f3d7ac; }
+  border-left-color: #00B85C; }
 
 .reveal .controls div.navigate-up.enabled:hover {
-  border-bottom-color: #f3d7ac; }
+  border-bottom-color: #00B85C; }
 
 .reveal .controls div.navigate-down.enabled:hover {
-  border-top-color: #f3d7ac; }
+  border-top-color: #00B85C; }
 
 /*********************************************
  * PROGRESS BAR
